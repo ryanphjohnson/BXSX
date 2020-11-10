@@ -43,11 +43,23 @@
             #Clear-Log {
                 background-color: grey;
             }
+            #log {
+                max-height: 200px;
+                overflow-y: scroll;
+            }
+            .log-entry {
+                padding: 16px;
+                border-top: solid black 2px;
+            }
+            span {
+                padding-left: 15px;
+                font-weight: bold;
+            }
         </style>
         <script src="popup.js"></script>
     </head>
     <body>
-        <div id="top">BUY Series X</div>
+        <div id="top">Buy Series X</div>
         <span>STATUS:</span>
         <span id="status">...</span>
         <div class="btn">
