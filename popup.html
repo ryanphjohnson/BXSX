@@ -28,7 +28,7 @@
                 padding: 9px 6px;
                 box-sizing: border-box;
             }
-            #Start-Buying, #Stop-Buying {
+            #Start-Buying, #Stop-Buying, #Clear-Log {
                 text-align: center; 
                 background-color: #191;
                 width: 100%;
@@ -39,6 +39,9 @@
             }
             #Stop-Buying {
                 background-color: red;
+            }
+            #Clear-Log {
+                background-color: grey;
             }
         </style>
         <script src="popup.js"></script>
@@ -53,5 +56,9 @@
         <div class="btn">
             <div id="Stop-Buying">Stop Buying</div>
         </div>
+        <div class="btn">
+            <div id="Clear-Log">Clear Log</div>
+        </div>
+        <div id="log"></div>
     </body>
 </html>

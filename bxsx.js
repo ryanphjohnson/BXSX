@@ -3,7 +3,6 @@ var cartCounters = [];
 var pageLoadTimeAllowance = 6000;
 
 chrome.runtime.onMessage.addListener(function (message) {
-	console.info('heard: ' + message);
 	if (message == 'buy') {
 		buy();
 	} else if (message == 'load') {
