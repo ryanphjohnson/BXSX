@@ -7,7 +7,11 @@ chrome.runtime.onMessage.addListener(function (message) {
 		buy();
 	} else if (message == 'load') {
 		checkForWinner();
+	} else if (message == 'reload') {
+		reload();
 	}
+
+	return true;
 
 	function buy() {
 		addToCartButtons = document.querySelectorAll('.add-to-cart.btn.btn-primary, #add-to-cart-button-ubb, .btn.btn-primary.btn-wide');
@@ -41,8 +45,8 @@ chrome.runtime.onMessage.addListener(function (message) {
 		}, pageLoadTimeAllowance);
 	}
 	
+	// Loud Noises
 	function winning() {
-		// Loud Noises
 		chrome.runtime.sendMessage(chrome.runtime.id, "winner");
 	}
 	
